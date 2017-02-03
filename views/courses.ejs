@@ -1,0 +1,22 @@
+<a href='/'>BACK</a>
+
+<h1>Courses</h2>
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Decription</th>
+        <th>Price</th>
+        <th>Course Length</th>
+    </thead>
+    <tbody>
+        <% courses.courses.forEach( function(course){ %>
+        <tr>
+            <td><%= course.name %></td>
+            <td><%= course.description %></td>
+            <td>$<%= course.price %></td>
+            <td><%= course.course_length %></td>
+        </tr>
+        <%}); %>
+    
+    </table>
